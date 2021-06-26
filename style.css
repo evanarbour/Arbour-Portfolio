@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --background-color: #eae7dc;
   --general-text: #8e8d8a;
@@ -26,10 +30,21 @@ header {
   border-bottom: 8px solid var(--accent);
 }
 
-.nav-bar li {
+.nav-bar li,
+.footer-nav li {
   display: inline-block;
+  color: var(--general-text);
+  font-family: "Roboto Condensed", sans-serif;
   padding: 10px 10px 10px 10px;
   margin: 5px 10px 5px 10px;
+  transition: 0.3s ease;
+}
+
+.nav-bar li:hover,
+.footer-nav li:hover {
+  background-color: var(--accent);
+  color: white;
+  border-radius: 10px;
 }
 
 header {
@@ -120,13 +135,39 @@ hr {
 }
 
 .gallery-img {
+  display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.gallery-item {
+  position: relative;
 }
 
 .gallery-img:hover {
-  opacity: 0.4;
+  opacity: 0.8;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: var(--highlight); /* Black see-through */
+  color: #f1f1f1;
+  width: 50%;
+  transition: 0.5s ease;
+  opacity: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.gallery-item:hover .overlay {
+  opacity: 1;
 }
 
 .gallery-item-1 {
@@ -137,6 +178,7 @@ hr {
 }
 
 .gallery-item-2 {
+  box-sizing: border-box;
   grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 1;
@@ -160,14 +202,6 @@ hr {
 .contact-container {
   display: flex;
   flex-direction: column;
-}
-
-.contact-container li {
-  display: inline-block;
-  padding: 0.5em 1em 0.5em 1em;
-  margin: 0.2em;
-  color: var(--general-text);
-  font-family: "Roboto Condensed", sans-serif;
 }
 
 @media screen and (max-width: 715px) {
