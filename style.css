@@ -210,3 +210,10 @@ hr {
     flex-direction: column;
   }
 }
+
+@media screen and (max-width: 475px) {
+  main,
+  footer {
+    flex-direction: column;
+  }
+}
