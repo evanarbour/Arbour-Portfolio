@@ -12,4 +12,4 @@ lot of hard work from all parties, but it was always worth it. Web Development i
 creativity and technical skill. I worked hard to reflect that in the layout and functionality of my portfolio. The project is easy to navigate,
 has a clean look with a comination of neutral and warm tones for a professional, yet welcoming feel.
 
-![portfolio] (./images/screencapture.png)
+![portfolio](./images/screencapture.png)
