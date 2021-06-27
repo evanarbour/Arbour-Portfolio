@@ -153,7 +153,7 @@ hr {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: var(--highlight); /* Black see-through */
+  background: var(--highlight);
   color: #f1f1f1;
   width: 50%;
   transition: 0.5s ease;
@@ -165,11 +165,12 @@ hr {
   text-align: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
+/* When you mouse over the container, fade in the overlay */
 .gallery-item:hover .overlay {
   opacity: 1;
 }
 
+/* positions each image for the gallery */
 .gallery-item-1 {
   grid-column-start: 1;
   grid-column-end: 6;
