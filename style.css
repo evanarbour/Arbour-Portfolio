@@ -211,14 +211,14 @@ hr {
   flex-direction: column;
 }
 
-@media screen and (max-width: 715px) {
+@media screen and (min-width: 715px) {
   main,
   footer {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (min-width: 475px) {
   main,
   footer {
     flex-direction: column;
