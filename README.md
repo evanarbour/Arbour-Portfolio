@@ -24,7 +24,7 @@ Let's Connect! Reach me on:
 
 [Click here](https://evanarbour.github.io/Arbour-Portfolio/) to take a look at my portfolio.
 
-![portfolio](./images/portfolio-capture.png)
+![portfolio](./assets/images/portfolio-capture.png)
 
 ## License
 
